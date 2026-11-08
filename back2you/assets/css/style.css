@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+:root{--navy:#29377f;--navy2:#1e285f;--gold:#d9b65d;--ink:#263044;--muted:#667085;--line:#d9deea;--bg:#f4f6fb}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{color:var(--navy);text-decoration:none}a:hover{text-decoration:underline}
+.topbar{background:var(--navy);color:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:1px;color:#fff;font-size:22px}.topbar nav{display:flex;gap:16px;flex-wrap:wrap}.topbar nav a{color:#fff;font-size:14px}
+.container{max-width:1150px;margin:28px auto;padding:0 18px;min-height:70vh}
+footer{text-align:center;padding:20px;color:#737b8d;font-size:13px}
+.hero{min-height:100vh;background:linear-gradient(rgba(5,12,35,.60),rgba(5,12,35,.68)),url('../images/school-building.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:#fff}
+.hero h1{font:700 clamp(48px,8vw,82px) 'Dancing Script',cursive;margin:0 0 10px;text-shadow:0 3px 12px #111}
+.hero p{font-size:clamp(16px,2vw,22px);margin:0 auto 32px;max-width:680px}
+.hero-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.btn,button{border:0;border-radius:5px;background:var(--navy);color:#fff;padding:11px 22px;cursor:pointer;font-size:14px;display:inline-block}
+.btn:hover,button:hover{background:var(--navy2);text-decoration:none}.btn.gold{background:#b38b32}.btn.light{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 18px rgba(25,35,70,.07);overflow:hidden;margin:20px 0}
+.panel-head{background:var(--navy);color:#fff;padding:16px 20px;font-weight:bold}.panel-body{padding:20px}
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:#f5f6fa}
+.login-box{width:min(100%,460px);background:#fff;border:1px solid #bbb;border-radius:6px;overflow:hidden}
+.login-head{background:#303b88;color:#fff;padding:18px;display:flex;align-items:center;gap:14px;font-weight:bold}
+.crest{width:42px;height:42px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}
+.login-body{padding:20px 16px}.field{margin-bottom:14px}.field label{display:block;font-weight:bold;font-size:13px;margin-bottom:6px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd0d9;border-radius:4px;font:inherit;background:#fff}
+textarea{min-height:90px;resize:vertical}.login-body input{padding:12px}
+.login-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.login-actions button{min-width:45%}
+.muted{color:var(--muted);font-size:13px}.alert{padding:12px 14px;border-radius:5px;margin:12px 0;background:#fff2f0;color:#9c2d25;border:1px solid #f0c5c0}
+.success{background:#effaf2;color:#216b38;border-color:#c7e8cf}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px}.stat strong{font-size:28px;color:var(--navy);display:block}
+.table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:7px}
+table{border-collapse:collapse;width:100%;min-width:760px}th,td{padding:11px 12px;border-bottom:1px solid #e7eaf0;text-align:left;font-size:13px;vertical-align:middle}th{background:#eef0f8;color:#29345d}
+.thumb{width:58px;height:48px;object-fit:cover;border-radius:4px}.actions{display:flex;gap:7px;flex-wrap:wrap}.small{padding:7px 10px;font-size:12px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.toolbar>*{flex:1;min-width:140px}
+.badge{display:inline-block;padding:4px 8px;border-radius:20px;background:#edf0fa;color:#28377d;font-size:11px;font-weight:bold}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form-grid .wide{grid-column:1/-1}
+.inline-form{display:inline}.danger{background:#a83232}.notice{padding:12px;border-left:4px solid var(--gold);background:#fff9e9;margin:12px 0}
+@media(max-width:650px){.topbar{align-items:flex-start}.topbar nav{gap:10px}.form-grid{grid-template-columns:1fr}.login-actions{align-items:stretch}.login-actions button{width:100%}}
