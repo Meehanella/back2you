@@ -1,0 +1,2 @@
+<?php
+require_once __DIR__ . '/../includes/auth.php';$u=require_role(['user']);page_header('Profile');?><h1>My Profile</h1><div class="panel"><div class="panel-body"><p><b>Name:</b> <?=e($u['full_name'])?></p><p><b>Username:</b> <?=e($u['username'])?></p><p><b>Role:</b> <?=e($u['role'])?></p><p class="muted">For account information changes, contact the Super Administrator.</p></div></div><?php page_footer();?>
